@@ -1,0 +1,27 @@
+
+###
+GET http://localhost:8080/coasters
+
+###
+POST http://localhost:8080/coasters
+content-type: application/json
+
+{
+"name":"Taron",
+"in_park": "Phantasialand",
+"height":30,
+"manufacturer": "Intamin"
+}
+
+###
+GET http://localhost:8080/coasters/1649252405546000000
+
+
+
+###
+GET http://localhost:8080/admin
+Accept: text/html
+Authorization: Basic admin:12345
+
+###
+GET http://localhost:8080/coasters/random
